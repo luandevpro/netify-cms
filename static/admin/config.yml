@@ -1,12 +1,16 @@
 backend:
   name: github
+  repo: luandevpro/netify-cms
+  base_url: https://6pqhzc0i2a.execute-api.ap-southeast-1.amazonaws.com
+  auth_endpoint: /prod/oauth/auth
 
+site_id: http://localhost:8000
 media_folder: "static/assets"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "články" # Used in the UI, ie.: "New Post"
-    folder: "_posts"
+  - name: post # Used in routes, ie.: /admin/collections/:slug/edit
+    label: Posts # Used in the UI, ie.: "New Post"
+    folder: src/posts
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
