@@ -1,6 +1,7 @@
 ---
 title: Hello Gatsby
 date: '2019-04-24 00:00'
+image: /static/assets/screenshot-from-2019-03-26-13-55-44.png
 ---
 An h1 header
 
