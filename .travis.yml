@@ -9,5 +9,4 @@ deploy:
   secret_access_key: $AWS_SECRET
   bucket: "blog.coder9s.club"
   skip_cleanup: true
-  acl: public_read
   local_dir: public
